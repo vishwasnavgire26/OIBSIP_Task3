@@ -1,0 +1,83 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #50c4ff, #b2ebf2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  /* Optional: Add a background image for clouds */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('images.jpg') no-repeat center center;
+    background-size: 512px;
+    opacity: 0.1;
+    z-index: 0;
+  }
+  
+  .converter {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .converter h2 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  input,
+  select,
+  button {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.7rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  input, select {
+    background: #f1f1f1;
+    color: #333;
+  }
+  
+  button {
+    background-color: #50c4ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #009fe3;
+  }
+  
+  #result {
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+
